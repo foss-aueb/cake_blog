@@ -6,6 +6,7 @@ class PostsController extends AppController {
 	var $components =  array('Session');
 	
 	function beforeFilter() {
+		parent:beforeFilter();
 		$this->set('some_var', 'contents of some var');
 	}
 	
